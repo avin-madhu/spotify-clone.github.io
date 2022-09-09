@@ -1,0 +1,125 @@
+body{
+    background-image: linear-gradient(blue,red);
+    
+
+    
+}
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: rgb(2, 0, 0);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.home{
+    padding-left: 5%;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.container{
+    min-height: 80vh;
+    background-color: black;
+    margin: 6% 2%;
+    background-image: url("Norma2D.png");
+    background-size: cover;
+    border-radius: 15px;
+    
+}
+span{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.bar{
+    background-color: black;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    color: aliceblue;
+    
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+.icons{
+   margin-top: 10px;
+   font-size: x-large;
+   cursor: pointer;
+   justify-content: space-between;
+   color: white;
+   
+   
+}
+
+.songitem{
+    display: flex;
+    align-items: center;
+    color: rgb(0, 8, 15);
+    background-color: aliceblue;
+    margin-right: 90px;
+    margin-left: 20px;
+    height: 50px;
+    border-radius:30px ;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-small;
+    margin-top: 5px;
+
+}
+.songlist{
+    
+}
+.playbutton{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.cover{
+    height: 40px;
+    width: 40px;
+    border-radius:50px;
+    border: solid black  2px;
+    margin-left:4px ;
+
+}
+#ProgressBar{
+    width: 80vw;
+}
+.play-icon{
+   height: 50px;
+   width: 50px;
+   border-radius: 40%;
+}
+div img{
+    border-radius: 30%;
+}
+button{
+    cursor: pointer;
+}

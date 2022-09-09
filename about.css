@@ -1,0 +1,39 @@
+
+body{
+   background-color: rgb(5, 131, 89);
+}
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: rgb(2, 0, 0);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.home{
+    padding-left: 5%;
+    padding-top: 20px;
+    cursor: pointer;
+}
+span{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
