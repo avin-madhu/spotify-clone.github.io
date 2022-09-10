@@ -1,8 +1,5 @@
 body{
     background-image: linear-gradient(blue,red);
-    
-
-    
 }
 *{
     margin:0;
@@ -12,8 +9,17 @@ img{
     height: 100%;
     width: 100%;
 }
+.duration{
+
+     
+}
 nav{
     background-color: rgb(2, 0, 0);
+    width: 100%;
+}
+
+li{
+    margin-right: 1px;
 }
 nav ul{
     display: flex;
@@ -146,4 +152,8 @@ button{
     display: flex;
     margin: 10px;
     
+}
+.songPlay{
+
+ color: black;
 }

@@ -41,6 +41,27 @@ function fn()
         audioElement.currentTime = audioElement.duration * (bar.value / 1000);
         audioElement.play();
     })
+
+
+    const makeallplay = (e)=>{
+        Array.from(document.getElementsByClassName("songPlay")).forEach((element)=>{
+            element.classList.add('fa-circle-play');
+            element.classList.remove('fa-circle-pause');
+        })
+    }
+    Array.from(document.getElementsByClassName("songPlay")).forEach((element)=>{
+                 element.addEventListener('click',(e)=>{
+                       makeallplay();
+                       index = parseInt(e.target.id);
+                        console.log(`${index}`);
+                        e.target.classList.remove('fa-circle-play');
+                        e.target.classList.add('fa-circle-pause');
+                        audioElement.src=`./${index}.mp3`;
+                        audioElement.currentTime=0;
+                        audioElement.play();
+                 })
+    })
 }
 window.onload = fn
 //<i class="fa-solid fa-pause"></i>
+//<i class="fa-regular fa-circle-pause"></i>

@@ -12,6 +12,7 @@ img{
 }
 nav{
     background-color: rgb(2, 0, 0);
+    width: auto;
 }
 nav ul{
     display: flex;
@@ -23,6 +24,9 @@ nav ul{
 
 
 }
+.spotify-text{
+    padding-left: 1px;
+    }
 a{
     text-decoration: none;
     color: aliceblue;
