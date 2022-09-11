@@ -10,8 +10,9 @@ function fn()
     let NowPlay=document.getElementById("Now-Play");
     let bar=document.getElementById("ProgressBar");
     let progress=0;
- 
     let songInfo= document.getElementsByClassName("now-play")
+
+    
 
     masterplay.addEventListener('click',()=>{
         if(audioElement.paused||audioElement.currentTime<=0)
@@ -66,7 +67,7 @@ function fn()
                         masterplay.classList.add('fa-play');
                         masterplay.classList.remove('fa-pause');
                         NowPlay.innerText = songs[songIndex].songName;
-
+                        window.scrollTo(0, document.body.scrollHeight);
                  })
     })
 
