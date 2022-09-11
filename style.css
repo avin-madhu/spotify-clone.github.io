@@ -11,10 +11,65 @@ img{
     height: 100%;
     width: 100%;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(43, 70, 92);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 15px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
 .now-play{
     color: aliceblue;
    
-    font-size: smaller;
+    font-size: small;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 5px;
 }
@@ -93,9 +148,9 @@ h1{
     align-items: center;
     color: rgb(0, 8, 15);
     background-image: linear-gradient(rgb(145, 164, 249), white);
-    margin-right: 90px;
+    margin-right: 60px;
     margin-left: 20px;
-    height: 50px;
+    height: 56px;
     border-radius:30px ;
     justify-content: space-between;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -176,4 +231,20 @@ button{
     font-size: xx-small;
     align-items: center;
     padding-bottom: 20px;
+}
+
+.supermarket-flowers{
+    margin-left: 10px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.duration{
+  position: absolute;
+  right: 150px;
+}
+.Song-Name-Text{
+    font-style: oblique;
+    font-weight: bolder;
+    
 }

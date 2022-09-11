@@ -19,13 +19,17 @@
             <span class="spotify-text">Spotify</span>
     
             <li class="home"><a href="index.html">Home</a></li>
-            <li class="home"><a href="about.html">About</a></li>
+            <li class="home"><a href="about/about.html">About</a></li>
             <li class="toggle-panel">
                 <style>
+                  @media only screen and (max-width: 600px){
                     body {
                       font-family: "Lato", sans-serif;
                     }
-                    
+                    .duration{
+  position: absolute;
+  right: 120px;
+}
                     .sidepanel  {
                       width: 0;
                       position: fixed;
@@ -33,7 +37,7 @@
                       height: 100%;
                       top: 0;
                       right: 0;
-                      background-color: #111;
+                      background-color: rgb(43, 70, 92);
                       overflow-x: hidden;
                       transition: 0.5s;
                       padding-top: 60px;
@@ -66,13 +70,14 @@
                       background-color: rgb(0, 0, 0);
                       color: white;
                       padding: 16px 15px;
-                      border: solid white 1px;
+                      border: none;
                       margin-left: 64px;
                     }
                     
                     .openbtn:hover {
                       background-color:#444;
                     }
+                  }
                     </style>
                     </head>
                     <body>
@@ -107,35 +112,35 @@
 
                     <div class="songitem">
                         <img class="cover"src="cover1.jpg" alt="cover">
-                        <span>Until i found you</span>
+                        <span class="Song-Name-Text">Until i found you</span>
                         <span class="duration">02:03</span>
                         <span class="playbutton"><i id="0" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover2.png" alt="cover">
-                        <span>Dandelions</span>
+                        <span class="Song-Name-Text">Dandelions</span>
                         <span class="duration">02:57</span>
                         <span class="playbutton"><i id="1" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover3.png" alt="cover">
-                        <span>Ghost Town</span>
+                        <span class="Song-Name-Text">Ghost Town</span>
                         <span class="duration">01:42</span>
                         <span class="playbutton"><i id="2" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover4.png" alt="cover">
-                        <span>Little Things</span>
+                        <span class="Song-Name-Text">Little Things</span>
                         <span class="duration">02:20</span>
                         <span class="playbutton"><i id="3" class=" songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover5.png" alt="cover">
-                        <span>SuperMarket Flowers</span>
+                        <span class="supermarket-flowers">SuperMarket Flowers</span>
                         <span class="duration">03:15</span>
                         <span class="playbutton"><i id="4" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>

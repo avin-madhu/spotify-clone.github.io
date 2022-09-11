@@ -12,7 +12,6 @@ function fn()
     let progress=0;
     let songInfo= document.getElementsByClassName("now-play")
 
-    
 
     masterplay.addEventListener('click',()=>{
         if(audioElement.paused||audioElement.currentTime<=0)
