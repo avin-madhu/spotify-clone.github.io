@@ -1,5 +1,5 @@
-# spotify-clone
+# spotify-clone: 
 
-preview: https://avin-madhu.github.io/spotify-clone-.github.io/
+current view: https://avin-madhu.github.io/spotify-clone-.github.io/
 
 status: In progress
