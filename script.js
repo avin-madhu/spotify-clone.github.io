@@ -60,7 +60,7 @@ function fn()
                         console.log(`${songIndex}`);
                         e.target.classList.remove('fa-circle-play');
                         e.target.classList.add('fa-circle-pause');
-                        audioElement.src=`./${songIndex}.mp3`;
+                        audioElement.src=`./${songIndex+1}.mp3`;
                         audioElement.currentTime=0;
                         audioElement.play();
                         masterplay.classList.add('fa-play');
