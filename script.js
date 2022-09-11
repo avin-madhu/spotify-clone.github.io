@@ -1,14 +1,17 @@
 function fn()
 {
     let songs=[
-    {songName:"Until i found you", filePath:"./1.mp3",coverPath:"cover1.png"}
+    {songName:"Until i found you", filePath:"./1.mp3",coverPath:"cover1.png"},{songName:"Dandelions" }
+    ,{songName:"Ghost Town"},{songName:"Little Things"},{songName:"SuperMarket Flowers"}
     ]
     let songIndex =0;
     let audioElement = new Audio("./1.mp3");
     let masterplay = document.getElementById("masterplay");
-    
+    let NowPlay=document.getElementById("Now-Play");
     let bar=document.getElementById("ProgressBar");
     let progress=0;
+ 
+    let songInfo= document.getElementsByClassName("now-play")
 
     masterplay.addEventListener('click',()=>{
         if(audioElement.paused||audioElement.currentTime<=0)
@@ -19,6 +22,7 @@ function fn()
         {
             audioElement.pause();
         }
+        NowPlay.innerText = songs[songIndex].songName;
         
     })
 
@@ -61,6 +65,8 @@ function fn()
                         audioElement.play();
                         masterplay.classList.add('fa-play');
                         masterplay.classList.remove('fa-pause');
+                        NowPlay.innerText = songs[songIndex].songName;
+
                  })
     })
 
@@ -70,11 +76,13 @@ function fn()
         }else{
             songIndex=songIndex+1;
         }
-                        audioElement.src=`./${songIndex}.mp3`;
+                        audioElement.src=`./${songIndex+1}.mp3`;
                         audioElement.currentTime=0;
                         audioElement.play();
                         masterplay.classList.add('fa-play');
                         masterplay.classList.remove('fa-pause');
+                        NowPlay.innerText = songs[songIndex].songName;
+
     })
 
     document.getElementById("previous").addEventListener('click',()=>{
@@ -83,13 +91,13 @@ function fn()
         }else{
             songIndex=songIndex-1;
         }
-                        audioElement.src=`./${songIndex}.mp3`;
+                        audioElement.src=`./${songIndex+1}.mp3`;
                         audioElement.currentTime=0;
                         audioElement.play();
                         masterplay.classList.add('fa-play');
                         masterplay.classList.remove('fa-pause');
+                        NowPlay.innerText = songs[songIndex].songName;
     })
+
 }
 window.onload = fn
-//<i class="fa-solid fa-pause"></i>
-//<i class="fa-regular fa-circle-pause"></i>

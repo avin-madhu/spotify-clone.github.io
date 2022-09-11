@@ -13,11 +13,90 @@
 <body>
     
     <nav>
+        
         <ul>
             <li><img src="logo.png" alt="logo"></li>
             <span class="spotify-text">Spotify</span>
+    
             <li class="home"><a href="index.html">Home</a></li>
             <li class="home"><a href="about.html">About</a></li>
+            <li class="toggle-panel">
+                <style>
+                    body {
+                      font-family: "Lato", sans-serif;
+                    }
+                    
+                    .sidepanel  {
+                      width: 0;
+                      position: fixed;
+                      z-index: 1;
+                      height: 100%;
+                      top: 0;
+                      right: 0;
+                      background-color: #111;
+                      overflow-x: hidden;
+                      transition: 0.5s;
+                      padding-top: 60px;
+                    }
+                    
+                    .sidepanel a {
+                      padding: 8px 8px 8px 32px;
+                      text-decoration: none;
+                      font-size: 25px;
+                      color: #ffffff;
+                      display: block;
+                      transition: 0.3s;
+                    }
+                    
+                    .sidepanel a:hover {
+                      color: #f1f1f1;
+                    }
+                    
+                    .sidepanel .closebtn {
+                      position: absolute;
+                      top: 0;
+                      right: 25px;
+                      font-size: 36px;
+                      
+                    }
+                    
+                    .openbtn {
+                      font-size: 20px;
+                      cursor: pointer;
+                      background-color: rgb(0, 0, 0);
+                      color: white;
+                      padding: 16px 15px;
+                      border: solid white 1px;
+                      margin-left: 300px;
+                    }
+                    
+                    .openbtn:hover {
+                      background-color:#444;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div id="mySidepanel" class="sidepanel">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                      <a href="#">Services</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
+                    </div>
+                    
+                    <button class="openbtn" onclick="openNav()">☰</button>  
+                    
+                    <script>
+                   function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+     function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+                    </script>
+            </li>
+            
         </ul>
     </nav>
 
@@ -31,47 +110,54 @@
                         <img class="cover"src="cover1.jpg" alt="cover">
                         <span>Until i found you</span>
                         <span class="duration">02:03</span>
-                        <span class="playbutton"><i id="1" class="songPlay fa-regular fa-circle-play"></i></span>
+                        <span class="playbutton"><i id="0" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover2.png" alt="cover">
                         <span>Dandelions</span>
                         <span class="duration">02:57</span>
-                        <span class="playbutton"><i id="2" class="songPlay fa-regular fa-circle-play"></i></span>
+                        <span class="playbutton"><i id="1" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover3.png" alt="cover">
                         <span>Ghost Town</span>
                         <span class="duration">01:42</span>
-                        <span class="playbutton"><i id="3" class="songPlay fa-regular fa-circle-play"></i></span>
+                        <span class="playbutton"><i id="2" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover4.png" alt="cover">
                         <span>Little Things</span>
                         <span class="duration">02:20</span>
-                        <span class="playbutton"><i id="4" class=" songPlay fa-regular fa-circle-play"></i></span>
+                        <span class="playbutton"><i id="3" class=" songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                     <div class="songitem">
                         <img class="cover"src="cover5.png" alt="cover">
                         <span>SuperMarket Flowers</span>
                         <span class="duration">03:15</span>
-                        <span class="playbutton"><i id="5" class="songPlay fa-regular fa-circle-play"></i></span>
+                        <span class="playbutton"><i id="4" class="songPlay fa-regular fa-circle-play"></i></span>
                     </div>
 
                 </div>
                 <div class="songbanner"></div>
             </div>
             <div id="bar" class="bar">
-                <input type="range" name="range" id="ProgressBar" min="0" value="0" max="1000">
+                <input type="range" name="range" class="range-style"id="ProgressBar" min="0" value="0" max="1000">
+
                 <div class="icons">
                     <i class="fa-solid fa-backward-step" id="previous"></i>
                     <i class="fa-solid fa-play"id="masterplay"></i>
                     <i class="fa-solid fa-forward-step" id="next"></i>
                 </div>
+                <div class="song-info"><p class="now-playing">Now Playing:</p>
+                    <span class="now-play" id="Now-Play">
+                        Dandelions
+                    </span>
+                </div>
+                
             </div>
          
 
