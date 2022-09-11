@@ -29,11 +29,16 @@ function fn()
     audioElement.addEventListener('playing', ()=>{
         masterplay.classList.remove('fa-play');
         masterplay.classList.add('fa-pause');
+
+        let songButton = Array.from(document.getElementsByClassName("songPlay"))[songIndex];
+        songButton.classList.remove('fa-circle-play');
+        songButton.classList.add('fa-circle-pause');
     })
 
     audioElement.addEventListener('pause' , ()=>{
         masterplay.classList.add('fa-play');
         masterplay.classList.remove('fa-pause');
+        makeallplay();
     })
 
     audioElement.addEventListener('timeupdate',()=>{
@@ -80,6 +85,7 @@ function fn()
         }else{
             songIndex=songIndex+1;
         }
+                        makeallplay();
                         audioElement.src=`./${songIndex+1}.mp3`;
                         audioElement.currentTime=0;
                         audioElement.play();
@@ -94,7 +100,8 @@ function fn()
               songIndex=5;
         }else{
             songIndex=songIndex-1;
-        }
+        }               
+                        makeallplay();
                         audioElement.src=`./${songIndex+1}.mp3`;
                         audioElement.currentTime=0;
                         audioElement.play();
