@@ -67,7 +67,11 @@ function fn()
                         masterplay.classList.add('fa-play');
                         masterplay.classList.remove('fa-pause');
                         NowPlay.innerText = songs[songIndex].songName;
-                        window.scrollTo(0, document.body.scrollHeight);
+                        document.body.addEventListener('click', () => window.scrollTo({
+                            top: 600,
+                            behavior: 'smooth',
+                          }));
+                          
                  })
     })
 
