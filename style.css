@@ -13,7 +13,7 @@ img{
 }
 .now-play{
     color: aliceblue;
-    padding-right: 50vh;
+   
     font-size: smaller;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 5px;
@@ -79,7 +79,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 110px;
+    height: 160px;
     color: rgb(2, 7, 10);
     flex-direction: column;
     max-width: 100%;
@@ -174,5 +174,5 @@ button{
     display: flex;
     font-size: xx-small;
     align-items: center;
-    
+    padding-bottom: 20px;
 }
