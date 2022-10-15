@@ -1,5 +1,8 @@
-# spotify-clone: 
+<h1 align="center" >Spotify Clone</h1>
 
-### Site till now: [Spotify](https://avin-madhu.github.io/spotify-clone.github.io/)
+### Site : [Spotify](https://avin-madhu.github.io/spotify-clone.github.io/) 
+status: In progress
 
-### status:      In progress
+song credits: `judgingboy`
+
+
